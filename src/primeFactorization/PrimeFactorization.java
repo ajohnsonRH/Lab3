@@ -1,10 +1,12 @@
 package primeFactorization;
 
+import java.util.ArrayList;
+
 public class PrimeFactorization {
 
-	public static Object generate() {
+	public static ArrayList<Integer> generate() {
 
-		return  null;
+		return  new ArrayList<Integer>();
 	}
 
 }

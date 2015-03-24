@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import org.junit.Test;
 
 public class PrimeFactorizationTest {
-	private ArrayList List() {
+	private ArrayList<Integer> List() {
 
-		return new ArrayList();
+		return new ArrayList<Integer>();
 	}
 	@Test
 	public void testOne() {
