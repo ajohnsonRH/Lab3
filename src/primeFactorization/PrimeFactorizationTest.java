@@ -52,4 +52,10 @@ public class PrimeFactorizationTest {
 	public void testNine() {
 		assertEquals(list(3,3), generate(9));
 	}
+	@Test
+	public void test325115() {
+		assertEquals(list(5,7,7,13327), generate(325115));
+	}
+	
+	
 }
