@@ -32,4 +32,12 @@ public class PrimeFactorizationTest {
 	public void testFour() {
 		assertEquals(list(2,2), generate(4));
 	}
+	@Test
+	public void testFive() {
+		assertEquals(list(5), generate(5));
+	}
+	@Test
+	public void testSix() {
+		assertEquals(list(2,3), generate(6));
+	}
 }
