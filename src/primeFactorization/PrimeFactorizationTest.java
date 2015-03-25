@@ -24,4 +24,8 @@ public class PrimeFactorizationTest {
 		assertEquals(list(2), generate(2));
 	}
 
+	@Test
+	public void testThree() {
+		assertEquals(list(3), generate(3));
+	}
 }
