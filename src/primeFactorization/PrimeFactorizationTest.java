@@ -3,19 +3,24 @@ package primeFactorization;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Test;
 
 public class PrimeFactorizationTest {
-	private ArrayList<Integer> List() {
-
-		return new ArrayList<Integer>();
+	private List<Integer> list(Integer...integers) {
+			return Arrays.asList(integers);
 	}
+
 	@Test
 	public void testOne() {
-		assertEquals(List(), PrimeFactorization.generate());
+		assertEquals(list(), PrimeFactorization.generate());
 	}
 
-	
+	@Test
+	public void testTwo() {
+		assertEquals(list(2), PrimeFactorization.generate(2));
+	}
 
 }
