@@ -15,7 +15,7 @@ public class PrimeFactorizationTest {
 
 	@Test
 	public void testOne() {
-		assertEquals(list(), PrimeFactorization.generate());
+		assertEquals(list(), PrimeFactorization.generate(1));
 	}
 
 	@Test

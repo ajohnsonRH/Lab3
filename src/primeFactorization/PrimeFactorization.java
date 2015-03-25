@@ -4,8 +4,11 @@ import java.util.ArrayList;
 
 public class PrimeFactorization {
 
-	public static ArrayList<Integer> generate(Integer...integers) {
-		return  new ArrayList<Integer>();
+	public static ArrayList<Integer> generate(int i) {
+		ArrayList<Integer> primes = new ArrayList<Integer>();
+		if(i> 1){
+			primes.add(2);
+		}
+		return primes;
 	}
-
 }
