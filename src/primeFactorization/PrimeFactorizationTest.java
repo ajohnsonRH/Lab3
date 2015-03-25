@@ -54,7 +54,7 @@ public class PrimeFactorizationTest {
 	}
 	@Test
 	public void test325115() {
-		assertEquals(list(5,7,7,13327), generate(325115));
+		assertEquals(list(5,7,7,1327), generate(325115));
 	}
 	
 	
