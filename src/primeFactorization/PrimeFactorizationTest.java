@@ -44,4 +44,8 @@ public class PrimeFactorizationTest {
 	public void testSeven() {
 		assertEquals(list(7), generate(7));
 	}
+	@Test
+	public void testEight() {
+		assertEquals(list(2,2,2), generate(8));
+	}
 }
