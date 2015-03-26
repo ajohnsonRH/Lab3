@@ -37,7 +37,8 @@ public class PrimeNumberGeneratorTest {
 				{ 2, list(1)},
 				{ 3, list(1,2)},
 				{ 4, list(1,2,3)},
-				{ 5, list(1,2,3)}
+				{ 5, list(1,2,3)},
+				{ 6, list(1,2,3,5)}
 		});
 	}
 
