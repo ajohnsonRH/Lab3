@@ -46,9 +46,11 @@ public class PrimeNumberGeneratorTest {
 	public void testPrimeNumberGenerator() {
 		assertEquals(expectedResult, generator.generateList(inputNumber));
 	}
+	
 	@Test
 	public void testIsPrime(){
-		assertEquals(2, true);
-		assertEquals(6, false);
+		assertEquals(PrimeNumberListGenerator.isPrime(2), true);
+		assertEquals(PrimeNumberListGenerator.isPrime(4), false);
+		assertEquals(PrimeNumberListGenerator.isPrime(6), false);
 	}
 }

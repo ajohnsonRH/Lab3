@@ -14,8 +14,8 @@ public class PrimeNumberListGenerator {
 		return primes;
 	}
 
-	private boolean isPrime(int number) {
-		for (int j = 2; j < (number / 2); j++) {
+	static boolean isPrime(int number) {
+		for (int j = 2; j < (number / 2)+1; j++) {
 			if (number % j == 0) {
 				return false;
 			}
