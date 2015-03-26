@@ -6,7 +6,7 @@ public class PrimeNumberListGenerator {
 
 	public ArrayList<Integer> generateList(Integer inputNumber) {
 		ArrayList<Integer> primes = new ArrayList<Integer>();
-		for (int i = 1; i < inputNumber; i++) {
+		for (int i = 2; i < inputNumber; i++) {
 			if (isPrime(i)) {
 				primes.add(i);
 			}
