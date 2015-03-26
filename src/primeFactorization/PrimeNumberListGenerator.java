@@ -1,10 +1,14 @@
 package primeFactorization;
 
+
+import java.util.ArrayList;
+
 public class PrimeNumberListGenerator {
 
-	public Object generateList(Integer inputNumber) {
-		// TODO Auto-generated method stub
-		return null;
+	public ArrayList<Integer> generateList(Integer inputNumber) {
+		ArrayList<Integer> primes = new ArrayList<Integer>();
+		primes.add(1);
+		return primes;
 	}
 
 }

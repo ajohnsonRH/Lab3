@@ -2,7 +2,8 @@ package primeFactorization;
 
 import static org.junit.Assert.*;
 
-import java.awt.List;
+import java.util.List;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -14,30 +15,33 @@ import org.junit.runners.Parameterized;
 @RunWith(Parameterized.class)
 public class PrimeNumberGeneratorTest {
 	private PrimeNumberListGenerator generator;
-
 	private Integer inputNumber;
-	private List expectedResult;
+	private List<Integer> expectedResult;
 
+	private static List<Integer> list(Integer...integers) {
+			return Arrays.asList(integers);
+	}
 	@Before
 	public void initialize() {
 		this.generator = new PrimeNumberListGenerator();
 	}
 
-	public PrimeNumberGeneratorTest(Integer inputNumber, List expectedResult) {
+	public PrimeNumberGeneratorTest(Integer inputNumber, List<Integer> expectedResult) {
 		this.inputNumber = inputNumber;
 		this.expectedResult = expectedResult;
 	}
 
 	@Parameterized.Parameters
-	public static Collection primeNumbers(){
-		return Arrays.asList(new Object[][]{
-				{2,new List(2)}
-				
-		});	
+	public static Collection primeNumbers() {
+		return Arrays.asList(new Object[][] { 
+				{ 2, list(1)}
+
+		});
 	}
+
 	@Test
-	public void testPrimeNumberGenerator(){
+	public void testPrimeNumberGenerator() {
 		assertEquals(expectedResult, generator.generateList(inputNumber));
 	}
-	
+
 }
