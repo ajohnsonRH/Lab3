@@ -34,7 +34,8 @@ public class PrimeNumberGeneratorTest {
 	@Parameterized.Parameters
 	public static Collection primeNumbers() {
 		return Arrays.asList(new Object[][] { 
-				{ 2, list(1)}
+				{ 2, list(1)},
+				{ 3, list(1,2)}
 
 		});
 	}
