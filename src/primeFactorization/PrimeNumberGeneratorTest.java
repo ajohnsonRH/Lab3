@@ -53,5 +53,8 @@ public class PrimeNumberGeneratorTest {
 		assertEquals(PrimeNumberListGenerator.isPrime(2), true);
 		assertEquals(PrimeNumberListGenerator.isPrime(4), false);
 		assertEquals(PrimeNumberListGenerator.isPrime(6), false);
+		assertEquals(PrimeNumberListGenerator.isPrime(19), true);
+		assertEquals(PrimeNumberListGenerator.isPrime(22), false);
+		assertEquals(PrimeNumberListGenerator.isPrime(23), true);
 	}
 }
